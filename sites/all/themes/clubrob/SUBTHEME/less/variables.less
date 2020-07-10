@@ -1,0 +1,52 @@
+@import "../../clubrob/less/bootstrap/variables.less";
+
+//New Variables
+//Color
+@dark-main:     rgb(35, 68, 94);
+@color-main:    #005395;
+@light-main:    #0279d7;
+@drawer-bg:     rgba(35, 68, 94, 0.95);
+
+@odd-stripe:    #f0f8ff; //lighter
+@even-stripe:   rgb(215, 235, 253);
+
+//Typography
+@headline: 'Oswald', Impact, sans-serif;
+
+// VARIABLE OVERRIDES
+
+@font-size-base:        16px;
+@font-size-small:       ceil((@font-size-base * 0.75));
+@body-bg:               #eee;
+@brand-primary:         @color-main;
+@headings-font-family:  @headline;
+
+@navbar-default-color:      #fff;
+@navbar-default-link-color: #fff;
+@navbar-default-bg:         transparent;
+@navbar-default-border:     none;
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin-left: 0 !important;
+  margin-top: 4px \9;
+}
+
+.tag-btn-mixin {
+    background: @odd-stripe;
+    text-decoration: none !important;
+    padding: 2px 5px;
+    border: 1px solid @even-stripe;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 2px;
+}
+
+.tag-btn-mixin-hover {
+    background: @even-stripe;
+}
+
+@screen-xl: 1600px;

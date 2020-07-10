@@ -1,0 +1,42 @@
+; The name, description and screenshot used for this theme on the Appearance
+; page at admin/appearance.
+
+; screenshot  = screenshot.png
+name        = Generic DayByDay Theme
+description = Clubrob subtheme. Uses HTML5 Boilerplate, Bootstrap, and jQuery for responsive theming.
+
+version = VERSION
+core = 7.x
+
+base theme  = clubrob
+
+regions[page_top]       = 'Page top'
+regions[header]         = 'Top Bar'
+regions[navigation]     = 'Navigation'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footer]         = 'Footer'
+regions[page_bottom]    = 'System Page bottom'
+regions[bottom]         = 'Page Bottom'
+
+fonts[google_fonts_api][] = "Poppins&subset=devanagari#100"
+fonts[google_fonts_api][] = "Poppins&subset=devanagari#100italic"
+fonts[google_fonts_api][] = "Poppins&subset=devanagari#200"
+fonts[google_fonts_api][] = "Poppins&subset=devanagari#200italic"
+fonts[google_fonts_api][] = "Poppins&subset=devanagari#300"
+fonts[google_fonts_api][] = "Poppins&subset=devanagari#300italic"
+fonts[google_fonts_api][] = "Poppins&subset=devanagari#500"
+fonts[google_fonts_api][] = "Poppins&subset=devanagari#500italic"
+fonts[google_fonts_api][] = "Poppins&subset=devanagari#600"
+fonts[google_fonts_api][] = "Poppins&subset=devanagari#600italic"
+fonts[google_fonts_api][] = "Poppins&subset=devanagari#700"
+fonts[google_fonts_api][] = "Poppins&subset=devanagari#700italic"
+fonts[google_fonts_api][] = "Poppins&subset=devanagari#800"
+fonts[google_fonts_api][] = "Poppins&subset=devanagari#800italic"
+fonts[google_fonts_api][] = "Poppins&subset=devanagari#900"
+fonts[google_fonts_api][] = "Poppins&subset=devanagari#900italic"
+fonts[google_fonts_api][] = "Poppins&subset=devanagari#italic"
+fonts[google_fonts_api][] = "Poppins&subset=devanagari#regular"

@@ -1,0 +1,88 @@
+body {
+    background: url('../images/bg.png') top left repeat;
+}
+
+ol {
+    padding-left: 0;
+}
+
+.inline-block {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#main, #content {
+    a, a:hover {
+        text-decoration: underline;
+    }
+
+    h2 a, .btn, .pagination li a {
+        text-decoration: none;
+    }
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+/* Header Styles */
+
+.header {
+    display: none;
+
+    @media (min-width: @screen-sm) {
+        display: block;
+        height: 100px;
+        background-color: #fff;
+
+        .region-header {
+            position: relative;
+        }
+
+        #BLOCK-ID {             //Style for logo image
+            float: left;
+
+            p {
+                margin: 0;
+                padding: 0;
+            }
+            img {
+                width: 374px;
+                height: auto;
+            }
+        }
+
+        /*#BLOCK-ID {           //Style for CONTACT tab
+            position: absolute;
+            right: 1em;
+            top: 0;
+            background-color: transparent;
+
+            p {
+                margin: 0;
+            }
+
+            a {
+                padding: .5em 1em 1em;
+                background-color: #A53025;
+                color: #fff;
+                font-size: .8em;
+                line-height: .8em;
+                text-transform: uppercase;
+                font-family: @headline;
+                font-weight: 300;
+                letter-spacing: 1px;
+                display: block;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+            a:hover {
+                padding-top: .7em;
+                text-decoration: none;
+            }
+            a:focus, a:active {
+                text-decoration: none;
+            }
+        } */
+    }
+}

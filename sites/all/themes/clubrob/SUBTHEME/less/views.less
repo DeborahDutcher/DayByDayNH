@@ -1,0 +1,209 @@
+/* Front Page Styles */
+
+.front {
+    #page-title {
+        font-size: 2em;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: @dark-main;
+    }
+}
+.views-row-4 {
+    clear: both;
+}
+
+.view-frontpage {
+
+    .view-header {
+        display: none;
+    }
+
+    .node {
+        border: 1px solid #ccc;
+        background: #fff;
+        padding: 0 1em 1em;
+        margin-bottom: 2em;
+
+        .a2a_kit {
+            display: none;
+        }
+
+        .field-name-field-image {
+            text-align: center;
+            margin: 1em 0;
+        }
+
+        .field-name-field-category, .field-name-field-audience {
+            .field-item {
+                float: left;
+            }
+
+            a {
+                .tag-btn-mixin();
+            }
+
+            a:hover {
+                .tag-btn-mixin-hover();
+            }
+        }
+    }
+
+    .node-article {
+        .field-name-field-image {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .view-footer {
+        text-align: center;
+        clear: both;
+        font-family: @headline;
+        letter-spacing: 1px;
+    }
+}
+
+@media (min-width: @screen-sm) {
+    .view-frontpage {
+        position: relative;
+
+        .view-header {
+            display: block;
+            font-family: @headline;
+            letter-spacing: 1px;
+            position: absolute;
+            top: -31px;
+            right: 0;
+        }
+
+        .node-article {
+        .field-name-field-image {
+                img {
+                    width: auto;
+                }
+            }
+        }
+
+        .view-footer {
+            text-align: right;
+        }
+    }
+}
+
+.region-highlighted {
+    position: relative;
+
+    .front-hero-image {
+        img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #666;
+        }
+    }
+
+    .front-hero-text {
+        //display: none;
+        background-color: fade(#333333, 93%);
+        border: 3px solid #000;
+        color: #fff;
+        padding: 2em 1em;
+        margin: 0 2% 1em;
+
+        h2 {
+            font-family: @headline;
+            text-align: center;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin: 0 0 0.7em;
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1em;
+            letter-spacing: 1px;
+            line-height: 1.7;
+            text-align: center;
+            font-family: Georgia, serif;
+        }
+    }
+}
+@media (min-width: @screen-sm) {
+    .region-highlighted {
+
+        .front-hero-text {
+            margin: 0;
+            width: 45%;
+            position: absolute;
+            top: 5%;
+            right: 5%;
+
+            h2 {
+                font-family: @headline;
+                text-align: center;
+                font-weight: 300;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                margin: 0 0 0.7em;
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+                letter-spacing: 1px;
+                line-height: 1.7;
+                text-align: center;
+                font-family: Georgia, serif;
+            }
+        }
+    }
+}
+
+@media (min-width: @screen-lg) {
+    .region-highlighted {
+
+        .front-hero-text {
+            padding: 2.1em 3.1em;
+
+            h2 {
+                font-size: 2.3em;
+            }
+
+            p {
+                font-size: 1.1em;
+            }
+        }
+    }
+}
+
+@media (min-width: @screen-xl) {
+    .region-highlighted {
+
+        .front-hero-text {
+            width: 30%;
+            top: 10%;
+            right: 10%;
+            padding: 2.3em 3.4em;
+
+            h2 {
+                font-size: 2.4em;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+
+/* Taxonomy Pages */
+
+.field-name-field-category, .field-name-field-audience {
+    font-size: @font-size-small;
+    clear: both;
+}
+
+.page-search .submitted {
+    display: none;
+}

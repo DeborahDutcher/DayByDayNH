@@ -1,0 +1,250 @@
+/* Bootstrap */
+
+// Core variables and mixins
+@import "variables.less";
+@import "../../clubrob/less/bootstrap/mixins.less";
+
+// Reset and dependencies
+@import "../../clubrob/less/bootstrap/normalize.less";
+@import "../../clubrob/less/bootstrap/print.less";
+@import "../../clubrob/less/bootstrap/glyphicons.less";
+
+// Core CSS
+@import "../../clubrob/less/bootstrap/scaffolding.less";
+@import "../../clubrob/less/bootstrap/type.less";
+@import "../../clubrob/less/bootstrap/code.less";
+@import "../../clubrob/less/bootstrap/grid.less";
+@import "../../clubrob/less/bootstrap/tables.less";
+@import "../../clubrob/less/bootstrap/forms.less";
+@import "../../clubrob/less/bootstrap/buttons.less";
+
+// Components
+@import "../../clubrob/less/bootstrap/component-animations.less";
+@import "../../clubrob/less/bootstrap/dropdowns.less";
+@import "../../clubrob/less/bootstrap/button-groups.less";
+@import "../../clubrob/less/bootstrap/input-groups.less";
+@import "../../clubrob/less/bootstrap/navs.less";
+@import "../../clubrob/less/bootstrap/navbar.less";
+@import "../../clubrob/less/bootstrap/breadcrumbs.less";
+@import "../../clubrob/less/bootstrap/pagination.less";
+@import "../../clubrob/less/bootstrap/pager.less";
+@import "../../clubrob/less/bootstrap/labels.less";
+@import "../../clubrob/less/bootstrap/badges.less";
+@import "../../clubrob/less/bootstrap/jumbotron.less";
+@import "../../clubrob/less/bootstrap/thumbnails.less";
+@import "../../clubrob/less/bootstrap/alerts.less";
+@import "../../clubrob/less/bootstrap/progress-bars.less";
+@import "../../clubrob/less/bootstrap/media.less";
+@import "../../clubrob/less/bootstrap/list-group.less";
+@import "../../clubrob/less/bootstrap/panels.less";
+@import "../../clubrob/less/bootstrap/responsive-embed.less";
+@import "../../clubrob/less/bootstrap/wells.less";
+@import "../../clubrob/less/bootstrap/close.less";
+
+// Components w/ JavaScript
+@import "../../clubrob/less/bootstrap/modals.less";
+@import "../../clubrob/less/bootstrap/tooltip.less";
+@import "../../clubrob/less/bootstrap/popovers.less";
+@import "../../clubrob/less/bootstrap/carousel.less";
+
+// Utility classes
+@import "../../clubrob/less/bootstrap/utilities.less";
+@import "../../clubrob/less/bootstrap/responsive-utilities.less";
+
+/* Non-Bootstrap Stuff */
+@import 'common.less';
+@import 'extras.less';
+@import 'ie8.less';
+
+/* Add Custom Styles */
+@import 'navigation.less';
+@import 'views.less';
+
+
+
+
+/* Node Styles */
+
+.node-title {
+    a {
+        color: @dark-blue;
+    }
+}
+.page-node .node, .page-taxonomy .node, .sidebars .block, .page-search .region-content, .view-jobs, .page-news .node {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.page-node .node, .page-taxonomy .node, .page-search .region-content, .view-jobs, .page-news .node {
+    padding: 1em;
+}
+.page-node .node {
+    margin-bottom: 0;
+}
+.submitted {
+    font-size: @font-size-small;
+}
+.page-search .region-content .search-form {
+    margin-top: 1.5em;
+}
+.page-taxonomy .node, .page-news .node {
+    margin-bottom: 1em;
+
+    .field-name-field-image {
+        float: left;
+        margin-right: 1em;
+    }
+}
+
+.splash-img {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.region-content .item-list ul li {
+    margin: 0;
+}
+
+.node-article, .node-new-resources {
+    .field-name-field-image {
+        text-align: center;
+        padding: 1em;
+        background-color: #f7f7f7;
+        margin-bottom: 1em;
+        border: 1px solid #ddd;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .field-name-field-category, .field-name-field-audience {
+        .field-label {
+            line-height: 27px;
+        }
+
+        .field-item {
+            float: left;
+        }
+
+        a {
+            .tag-btn-mixin();
+        }
+
+        a:hover {
+            .tag-btn-mixin-hover();
+        }
+    }
+}
+
+.a2a_kit {
+    display: inline-block;
+    margin-bottom: .5em;
+
+    h5 {
+        float: left;
+        text-transform: uppercase;
+        color: #888;
+    }
+
+    a {
+        vertical-align: middle;
+    }
+
+}
+
+@media (min-width: @screen-sm) {
+    .node-article {
+        .field-name-field-image {
+            img {
+                width: auto;
+            }
+        }
+    }
+}
+
+@media (min-width: @screen-md) {
+    .page-node .node, .view-jobs {
+        margin-bottom: 2em;
+    }
+}
+
+
+
+/* Sidebar Styles */
+
+.sidebars .region {
+    margin: 1em 0;
+
+    .btn {
+        font-family: @headline;
+    }
+}
+
+.sidebars {
+    .block-inner {
+        padding: 1em;
+    }
+    .block {
+        padding: 0;
+        margin-bottom: 1em;
+    }
+    h3 {
+        background: none repeat scroll 0 0 #002b4d;
+        color: #fff;
+        font-size: 1.1em;
+        margin: 0;
+        padding: 0.5em;
+        margin-bottom: 11px;
+    }
+}
+
+/* Footer and Bottom Styles */
+
+.region-footer {
+    background: url('https://s3.amazonaws.com/libapps/accounts/1226/images/foot1-bg.png') repeat;
+    box-shadow: inset 0 5px 10px 0 #000;
+    padding-bottom: 1em;
+    color: #fff;
+
+    a {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    .scsl-social {
+        padding-right: 5%;
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            display: inline-block;
+            width: 64px;
+            height: auto;
+            margin: 0 6px 6px 0;
+        }
+    }
+}
+
+.region-bottom {
+    background: url('https://s3.amazonaws.com/libapps/accounts/1226/images/foot2-bg.png') repeat;
+    box-shadow: #000 0 15px 15px 15px;
+    padding: 1em 0 4em 0;
+    color: #fff;
+
+    a {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    .scsl-imls {
+        img {
+            width: 200px;
+            height: auto;
+            float: right;
+            margin-left: 1em;
+        }
+    }
+}

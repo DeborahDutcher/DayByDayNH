@@ -1,0 +1,71 @@
+@import "../../clubrob/less/bootstrap/variables.less";
+
+@dark-main:     darken(@color-main, 20%);
+@light-main:    lighten(@color-main, 10%);
+@drawer-bg:     fade((darken(@color-main, 30%)), 85%);
+
+@odd-stripe:    lighten(@color-main, 58%); //lighter
+@even-stripe:   lighten(@color-main, 40%);
+
+//Typography
+@headline: 'Luckiest Guy', Impact, sans-serif;
+@nav-headline: 'Oswald', Impact, sans-serif;
+
+// VARIABLE OVERRIDES
+
+@font-size-base:        16px;
+@font-size-small:       ceil((@font-size-base * 0.75));
+@body-bg:               #eee;
+
+@brand-primary:         darken(@color-main, 10%);
+@brand-success:         @color-second;
+@brand-info:            @color-main;
+
+@headings-font-family:  @headline;
+@headings-color:        @brand-success;
+
+@navbar-default-color:      #fff;
+@navbar-default-link-color: #fff;
+@navbar-default-bg:         transparent;
+@navbar-default-border:     none;
+
+@link-color:            lighten(@brand-primary, 10%);
+@link-hover-color:      lighten(@link-color, 13%);
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin-left: 0 !important;
+  margin-top: 4px \9;
+}
+
+.tag-btn-mixin {
+    background: @odd-stripe;
+    text-decoration: none !important;
+    padding: 2px 5px;
+    border: 1px solid @even-stripe;
+    border-radius: 3px;
+    display: inline-block;
+    margin: 2px;
+}
+
+.tag-btn-mixin-hover {
+    background: @even-stripe;
+}
+
+.node-image-mixin {
+    text-align: center;
+    padding: 1em;
+    background-color: #f7f7f7;
+    margin-bottom: .5em;
+    border: 1px solid #ddd;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@screen-xl: 1600px;

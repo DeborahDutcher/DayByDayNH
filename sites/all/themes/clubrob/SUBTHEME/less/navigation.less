@@ -1,0 +1,316 @@
+/* Navbar Style */
+
+.navbar {
+    border: 0;
+    margin-bottom: 0;
+}
+
+#navigation {
+    border-top: 1px solid @color-main;
+    border-bottom: 1px solid @dark-main;
+    background-color: #0161ad;
+    text-decoration: none;
+
+    .nav {
+        .open a.dropdown-toggle {
+            background-color: @dark-main;
+            color: #fff;
+        }
+        .dropdown {
+            font-family: @headline;
+            font-size: 1.2em;
+            font-weight: 300;
+
+            a:hover, a:focus  {
+                background-color: @dark-main;
+                color: #fff;
+            }
+
+            p {
+                font-family: @font-family-sans-serif;
+                font-size: .9em;
+            }
+
+            .nav-search-form {
+                margin-top: 8px;
+                font-family: @font-family-sans-serif;
+
+                a.coll-link {
+                    background-color: transparent;
+                    padding: 0;
+                    text-decoration: underline;
+                    color: #fff;
+                }
+                img {
+
+                }
+                .form-group {
+                    width: 100%;
+                    margin-bottom: .5em;
+
+                    .input-sm {
+                        width: 100%;
+                    }
+                    .form-submit {
+                        display: none;
+                    }
+                }
+                .btn {
+                    font-family: @headline;
+                }
+            }
+
+            h4 {
+                margin-bottom: 0;
+                padding-bottom: 15px;
+                border-bottom: 1px solid #11202C;
+                font-size: 1.5em;
+            }
+
+            .navgul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                font-family: @font-family-sans-serif;
+
+                li {
+                    font-size: .9em;
+                    line-height: 1.4;
+                    border-bottom: 1px solid #03090E;
+                    border-top: 1px solid #3B5B74;
+
+                    a {
+                        background-color: transparent;
+                        padding: 10px;
+                        display: inline-block;
+                        width: 100%;
+                        color: #fff;
+                    }
+
+                    a:hover, a:focus {
+                        background-color: #03090E;
+                    }
+                }
+            }
+        }
+    }
+
+    .dropdown {
+        border-top: 1px solid @light-main;
+        border-bottom: 1px solid @dark-main;
+    }
+
+    .dropdown-menu {
+        border-top: 1px solid #162b3a;
+        background-color: @drawer-bg;
+        color: #fff;
+        border-radius: 0;
+        margin-top: 0;
+
+    }
+
+    .btn-toggle {
+        display: none;
+    }
+
+    #block-search-form {
+        margin-top: 7.5px;
+
+
+        #edit-submit-btn, .btn-toggle {
+            display: none;
+        }
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        padding: 10px 0 0 15px;
+
+        img {
+            height: 30px;
+            width: auto;
+        }
+    }
+
+    .navbar-nav {
+        background-color: #0161ad;
+        margin-bottom: 0;
+    }
+
+    .navbar-collapse {
+        background-color: @dark-main;
+    }
+
+    .navbar-toggle {
+        color: #fff;
+        border: 0;
+
+        .icon-bar {
+            background-color: #fff;
+        }
+    }
+
+    .navbar-toggle:hover, .navbar-toggle:focus {
+        background-color: @dark-main;
+    }
+
+    .nav-feature {
+        p {
+            text-align: center;
+        }
+        h5 {
+            margin-left: 25px;
+        }
+        img {
+            width: 260px;
+            margin: 10px;
+            height: auto;
+            border: 1px solid #000;
+        }
+    }
+
+    .nav-tbs {
+        a {
+            padding: 0 !important;
+            color: #fff;
+            text-decoration: underline;
+        }
+        .nav-tbs-img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            margin: 1.3em 0 1em;
+        }
+        a.btn {
+            font-family: @headline;
+            padding: 15px !important;
+            text-decoration: none;
+        }
+    }
+}
+
+@media (min-width: @screen-sm) {
+    #navigation {
+        .nav {
+            .dropdown {
+                font-size: 1em;
+
+                a {
+                    padding-left: 8px;
+                    padding-right: 8px;
+                }
+            }
+        }
+
+        .dropdown {
+            border-top: 0;
+            border-bottom: 0;
+        }
+
+        .dropdown-menu {
+            border-bottom: 4px solid #0F2333;
+        }
+
+        .navbar-brand {
+            display: none;
+        }
+
+        .btn-toggle {
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            margin-top: 0;
+            display: inline;
+            margin-left: -5px;
+        }
+
+        #block-search-form {
+            background-color: @drawer-bg;
+            padding: 15px;
+            display: none;
+            position: absolute;
+            right: 15px;
+            top: 51px;
+            margin-top: 0;
+            z-index: 999;
+
+            .form-item-search-block-form {
+                display: inline;
+            }
+
+            #edit-search-block-form--2 {
+                width: 300px;
+            }
+        }
+        .navbar-nav {
+            background-color: transparent;
+            margin-top: 0;
+        }
+
+        .navbar-collapse {
+            background-color: transparent;
+        }
+    }
+}
+
+@media (min-width: @screen-md) {
+#navigation {
+        .nav {
+            .dropdown {
+                font-size: 1.2em;
+
+                a {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+                .nav-search-form {
+                    img {
+                        display: inline;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .form-group {
+                        width: 100%;
+                        margin-bottom: .5em;
+
+                        .input-sm {
+                            width: 80%;
+                        }
+                        .form-submit {
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: @screen-lg) {
+    #navigation {
+
+        .btn-toggle {
+            display: none;
+        }
+
+        #block-search-form {
+            background-color: transparent;
+            padding: 0;
+            display: block;
+            position: absolute;
+            top: 8px;
+            margin-top: 0;
+            z-index: auto;
+
+            #edit-search-block-form--2 {
+                width: 170px;
+            }
+
+            #edit-submit-btn {
+                display: inline;
+                margin-left: -5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+; The name, description and screenshot used for this theme on the Appearance
+; page at admin/appearance.
+
+; screenshot  = screenshot.png
+name        = DayByDaySC Theme
+description = Clubrob subtheme. Uses HTML5 Boilerplate, Bootstrap, and jQuery for responsive theming.
+
+version = VERSION
+core = 7.x
+
+base theme  = clubrob
+
+regions[page_top]       = 'Page top'
+regions[header]         = 'Top Bar'
+regions[navigation]     = 'Navigation'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footer]         = 'Footer'
+regions[page_bottom]    = 'System Page bottom'
+regions[bottom]         = 'Page Bottom'
