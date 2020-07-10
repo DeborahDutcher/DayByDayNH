@@ -24,6 +24,7 @@ tar zxf /root/src/drupal-7.72.tar.gz
 mv drupal-7.72/* drupal-7.72/.* .
 rmdir drupal-7.72
 mv sites sites.old
+cp -r /root/daybyday_org/sites .
 cp /root/daybyday_org/redirect.php .
 vi redirect.php        # update IP/hostname of server on line 7)
 vi .htaccess           # add redirect.php as first entry of DirectoryIndex stanza
