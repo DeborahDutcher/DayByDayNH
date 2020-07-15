@@ -1,6 +1,6 @@
 # DayByDay Installation
 
-This implementation of the "Day by Day" website was created by the staff of the State Library of Ohio, using the code produced by the State Library of South Carolina. This implementation has been tested with [Drupal version 7.72](https://ftp.drupal.org/files/projects/drupal-7.72.tar.gz). The documentation below assumes that you have downloaded the file to the <code>/root/src</code> directory on the server where you're installing the software.
+This implementation of the "Day by Day" website was created by the staff of the State Library of Ohio, using the code produced by the State Library of South Carolina. This implementation has been tested with [Drupal version 7.72](https://ftp.drupal.org/files/projects/drupal-7.72.tar.gz). The documentation below assumes that you have downloaded the linked Drupal gzipped source file to the <code>/root/src</code> directory on the server where you're installing the software.
 
 ## Steps
 The following steps are for a CentOS 7 server with PHP 7.3, MariaDB Server 5.5.65, and HTTPD installed, and assumes that the files in this repo have been placed at <code>/root/daybyday_org</code>.
